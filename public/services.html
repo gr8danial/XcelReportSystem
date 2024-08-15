@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Service Report</title>
+    <link rel="stylesheet" type="text/css" href="../assets/CSS/styles.css">
+  </head>
+
+  <body>
+    <h1>Service Report Submission</h1>
+    <ul id="service-reports-list"></ul>
+
+    <div class="container">
+        <form id="service-report-form"  action="services.php" method="post">
+        <table>
+            <tr>
+            <td>
+                <label for="complaint_id">Complaint ID:</label>
+                <input type="text" id="complaint_id" name="complaint_id">
+            </td>
+            <td>
+                <label for="eu_name">EU Name:</label>
+                <input type="text" id="eu_name" name="eu_name">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="job_card_number">Job Card Number:</label>
+                <input type="text" id="job_card_number" name="job_card_number">
+            </td>
+            <td>
+                <label for="service_date">Service Date:</label>
+                <input type="date" id="service_date" name="service_date">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="service_time">Service Time:</label>
+                <input type="time" id="service_time" name="service_time">
+            </td>
+            <td>
+                <label for="xisb_tech">XISB Tech:</label>
+                <input type="text" id="xisb_tech" name="xisb_tech">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                <option value="">Select Status</option>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                </select>
+            </td>
+            <td>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+            </td>
+            <td>
+                <label for="equipment_type">Equipment Type:</label>
+                <input type="text" id="equipment_type" name="equipment_type">
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="model_serial_number">Model/Serial Number:</label>
+                <input type="text" id="model_serial_number" name="model_serial_number">
+            </td>
+            <td>
+                <label for="nature_of_defect">Nature of Defect:</label>
+                <textarea id="nature_of_defect" name="nature_of_defect"></textarea>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="probable_cause">Probable Cause:</label>
+                <textarea id="probable_cause" name="probable_cause"></textarea>
+            </td>
+            <td>
+                <label for="action_taken">Action Taken:</label>
+                <textarea id="action_taken" name="action_taken"></textarea>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks"></textarea>
+            </td>
+            </tr>
+            <tr>  
+            <td>
+                <label for="created_at">Created At:</label>
+                <input type="datetime-local" id="created_at" name="created_at">
+            </td>
+            <td>
+                <label for="updated_at">Updated At:</label>
+                <input type="datetime-local" id="updated_at" name="updated_at">
+            </td>
+         
+           
+            </tr>
+        </table>
+        <button class="button">Submit</button>
+        </form>
+    </div>
+
+ 
+    <script src="scripts.js"></script>
+  </body>
+</html>
